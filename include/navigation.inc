@@ -43,6 +43,18 @@
   <td class="subnav_right">&nbsp;</td>
 </tr>
 <tr>
+    <td class="subnav_left"> </td>
+    <td>
+        <form method="get" id="search" action="http://duckduckgo.com/">
+        <input type="hidden" name="sites"value="4pi.org"/>
+        <input type="hidden" name="kt" value="Helvetica"/>
+        <input type="text" name="q" maxlength="255" placeholder="DuckDuckGo Search"/>
+        <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+        </form> 
+    </td>
+    <td class="subnav_right"> </td>
+</tr>
+<tr>
   <td><img src="$(IMG)/subnav_bottomleft.gif"></td>
   <td class="subnav_bottom"><img src="$(IMG)/subnav_bottommiddle.gif"></td>
   <td><img src="$(IMG)/subnav_bottomright.gif"></td>
