@@ -1,6 +1,6 @@
 #include "layout.inc" select=home_select name="Home"
 #include "format.inc"
-<section "<en: Welcome!><de: Willkommen!>">
+<section "<en: Spherical Panoramas and Object Movies><de: Sphärische Panoramen und Objekt Filme>">
 <h1><en: Spherical Panoramas and Object Movies>
     <de: Sphärische Panoramen und Objekt Filme></h1>
 
@@ -75,9 +75,3 @@
 </td>
 </tr>
 </table>
-<p><br>
-<en: enjoy>
-<de: viel Spaß>
-<br>
-<br>
-<img src="$(IMG)/unterschrift.png" name="Peter Reimer">

@@ -16,25 +16,21 @@
 <html>
 
 <head>
-  <title>4pi.org :: <en: Spherical Panoramas><de: Sph&auml;rische Panoramen> :: {#SECTION#}</title>
+  <title>{#SECTION#} :: 4pi.org</title>
+  #<title>4pi.org :: <en: Spherical Panoramas><de: Sph&auml;rische Panoramen> :: {#SECTION#}</title>
   <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
   <link REL="stylesheet" TYPE="text/css" HREF="$(CSS)/style.css">
-  <link REL="shortcut icon" HREF="$(IMG)/favicon.ico">
+  <link REL="shortcut icon" HREF="$(ROOT)/favicon.ico">
   <script language="JavaScript" type="text/javascript" src="$(ROOT)/jscript/jscript.js"></script>
   <info style="meta" keywords  = "Panoramas, Oject movies, Panorama Tools, gimp, linux, immersive imaging"
                      description="<en: ><de: >" 
-                     copyright = "$(WML_GEN_REALNAME)"
-		     sadfa="sdfg"
-		     >
+                     copyright = "$(WML_GEN_REALNAME)" >
 </head>
 
 <isolatin>
   
-#<body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0">
 <body bgcolor="#ffffff">
 
-#<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
-#<script language="JavaScript"  type="text/javascript" src="$(ROOT)/jscript/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
 
 #########
 

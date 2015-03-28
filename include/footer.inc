@@ -10,7 +10,7 @@
 
 <br>
 <br><small>
-   &copy; 2002-2014 <href url="mailto:Peter%20Reimer%20%3Cpeter%404pi.org%3E" name="Peter Reimer"><br>
+   &copy; 2002-2015 <href url="mailto:Peter%20Reimer%20%3Cpeter%404pi.org%3E" name="Peter Reimer"><br>
    <en: last modified><de: letzte Änderung>: $(WML_SRC_ISOTIME)
 	</small>		 
 </center>

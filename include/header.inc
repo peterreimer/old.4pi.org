@@ -15,7 +15,7 @@
   <MAP NAME="map">
   <AREA SHAPE="POLY" COORDS="2,21,112,21,112,50,172,50,172,67,22,67,22,50,2,50" HREF="$(ROOT)/" alt="" target="_parent">
   </MAP>
-  <img src="$(IMG)/logo.gif" usemap="#map" border="0" alt="www.4pi.org - Spherical Panoramas"></td>
+  <img src="$(IMG)/logo.gif" usemap="#map" border="0" alt="4pi.org - Spherical Panoramas"></td>
   <td class="header_top" align="right" width=100%><img src="$(IMG)/header_panorama.jpg"></td>
   <td class="header_right" width="28"><img src="$(IMG)/header_right.png"></td>
 </tr>
@@ -61,7 +61,7 @@
 #       onmouseout="return nd();"
 >
  <AREA SHAPE="RECT" COORDS="384,2,422,18"
-       HREF="$(LINKS)/"
+       HREF="#"
        alt="" 
        target="_parent" 
 #       onmouseover="return overlib('There is much mor to read in the internet', CAPTION, 'Links');" 

@@ -1,10 +1,10 @@
 -I include
 
--D BASE_URL=http://www.4pi.org
+-D BASE_URL=http://4pi.org
 -D BASE_DIR~.
 -D WML_GEN_REALNAME="Peter Reimer"
 -D WML_GEN_USERNAME="peter"
--D WML_GEN_HOSTNAME="reimer-web.de"
+-D WML_GEN_HOSTNAME="4pi.org"
 
 
 -D ROOT~.
@@ -14,7 +14,6 @@
 -D EQUIPMENT~./equipment
 -D DOWNLOADS~./downloads
 -D CONTACT~./contact
--D GUESTBOOK~./guestbook
 -D SITEMAP~./sitemap
 -D IMG~./img
 -D PDF~./pdf
