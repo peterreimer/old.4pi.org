@@ -1,0 +1,11 @@
+#include "layout.inc" select=tutorial_shear name=Tutorial
+<section "Tutorial">
+<subsection "Shear">
+<h2>{#SUBSECTION#}</h2>
+After applying <href url="http://www.fh-furtwangen.de/~dersch/patch.zip" 
+name="this patch"> the PanoTools library provides the possibility 
+to correct for image shear, previously only available via the Gimp/Photoshop
+plug-in 'Correct'.
+<center>
+<img src="img/shear.png">
+</center>

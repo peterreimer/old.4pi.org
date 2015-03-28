@@ -1,0 +1,6 @@
+#include "layout.inc" select=main_objects name=Objects
+<section "Objects">
+<subsection "Objects Movies">
+
+<h2>{#SUBSECTION#}</h2>
+<p>

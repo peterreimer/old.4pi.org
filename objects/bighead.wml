@@ -1,0 +1,26 @@
+#include "layout.inc" select=objects_bighead name=Objects
+<section "Objects">
+<subsection "The large Pano Head">
+
+<h2>Large Pano Head</h2>
+<p>
+<center>
+<protect>
+<applet name=ptviewer archive=ptobject.jar code=ptviewer.class width=220 height=275>
+<PARAM name=view_width	value="220">
+<PARAM name=view_height	value="275">
+<PARAM name=auto	value="1">
+
+<param name=applet0 value="{code=ptobject.class}
+                           {file=obj/bighead.jpg}
+                           {nhor=12}
+                           {nver=1}
+			   {auto=0.5}
+			   {pan=12}">
+
+<param name=inits value="ptviewer:startApplet(0)">
+</applet>
+
+</protect>
+
+</center>

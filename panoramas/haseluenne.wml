@@ -1,0 +1,66 @@
+#include "layout.inc" select=panoramas_haseluenne name=Panoramas
+#include "ptviewer.inc"
+<section    "Panoramas">
+<subsection "Haselünne">
+
+<h2>{#SUBSECTION#}</h2>
+
+<div align="center">
+<protect>
+<applet archive=ptviewer.jar code=ptviewer.class name=ptviewer width=400 height=330>
+
+// list of panos
+
+<param name=pano0	value="
+	{file=panos/garten.jpg}
+	{auto=0.5}
+	{pan=20}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(20,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(1)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(1)' p i'./img/next.gif'}">
+
+
+<param name=pano1	value="
+	{file=panos/ahorn.jpg}
+	{auto=0.5}
+	{pan=-36}
+	{tilt=-9}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(-36,-9,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(0)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(0)' p i'./img/next.gif'}">
+
+
+
+</applet>
+</protect>
+
+
+<br>
+
+<instructions/>
+
+
+<table width=400 cellpadding=0>
+
+<view number = "0"
+      key    = "garten"
+      title  = "Reimer's Garten "
+      desc   = "My parents garden in 
+                <href url="http://www.haseluenne.de" name="Haselünne">">
+		  
+<view number = "1"
+      key    = "ahorn"
+      title  = "The Wedding maple"
+      desc   = "It's hard to see, but there is a little maple tree"> 
+</table>
+
+</center>
+
+

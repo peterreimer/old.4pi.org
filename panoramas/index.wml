@@ -1,0 +1,8 @@
+#include "layout.inc" select=main_panoramas name=Panoramas
+<section "<en: Panoramas>
+          <de: Panoramen>">
+<subsection "<en: Spherical Panoramas>
+             <de: Sphärische Panoramen>">
+<h2>{#SUBSECTION#}</h2>
+<p>
+<img src="img/fish360.jpg" alt="360 degree fisheye">

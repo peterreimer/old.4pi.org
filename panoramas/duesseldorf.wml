@@ -1,0 +1,14 @@
+#include "layout.inc" select=panoramas_duesseldorf name=Panoramas
+#include "ptviewer.inc"
+<section    "Panoramas">
+<subsection "Düsseldorf">
+
+<h2>{#SUBSECTION#}</h2>
+
+<protect>
+</protect>
+
+
+
+
+

@@ -1,0 +1,11 @@
+#!/usr/bin/perl -w
+
+$number_of_frames = 180;
+$panorama_file    = "panorama.jpg";
+
+printf("p f0 w200 h150 v60  n\"TIFF_m\"\n");
+
+for ($i = 1; $i <= $number_of_frames; $i++){
+  $angle=$i * 360/$number_of_frames;
+  printf("o f4 r0 p0 y$angle v360 n\"$panorama_file\"\n");
+}

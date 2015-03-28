@@ -1,0 +1,51 @@
+#include "layout.inc" select=equipment_panohead name=Equipment
+#include "format.inc"
+#use wml::std::box
+#include "format.inc"
+<section    "<en: Equipment><de: Ausrüstung>">
+<subsection "<en: Panoramic head><de: Panoramakopf>">
+
+<h1>{#SECTION#}</h1>
+<h2>{#SUBSECTION#}</h2>
+<p>
+Companies:
+<href url="http://www.kaidan.com" name="Kaidan">,
+<href url="http://www.manfrotto.com" name="Manfrotto/Bogen">,
+<href url="http://www.peaceriverstudios.com" name="Peace River">, <br>
+<p>
+home-made
+<href url="http://www.htu.tuwien.ac.at/~sascha/ptguide"
+      name="Sascha Kerschhofer">,
+<href url="http://www.panoramas.de"
+      name="Markus Altendorf">,
+<href url="http://www.fh-furtwangen.de/~dersch/heliarVR/heliarVR0.html"
+      name="Helmut Dersch">,
+<href url="http://www.bigbenpublishing.com.au/360/docs/tutorial/advanced/panohead.html"
+      name="Ben Kreunen">,
+<href url="http://www.nemeng.com/equipment/index.html"
+      name="Andrew Nemeth">,
+
+<fig nr      = "1"
+     content = "<img src="$(EQUIPMENT)/img/head.jpg" alt="Pano Head">"
+     caption = "<en: Side and front view of the Panorama head. The most right
+                view shows the setup in position for the zenit shot.>
+		<de: Seiten- und Vorderansicht des Panoramakopfes. Ganz rechts
+		ist der Kopf in der Position für das Zenit-Bild zu sehen.>
+		">
+
+<grid layout="2x6"
+      align=rl>
+<cell><img src="img/lbracket.jpg"><br></cell> 
+<cell><h3>L-shaped bracked</h3></cell>
+<cell><img src="img/rails.jpg"><br></cell>
+<cell><h3>Focussing rail</h3></cell>
+<cell><img src="img/ballhead.jpg"><br></cell>
+<cell><h3>Ball head</h3></cell>
+<cell><img src="img/gewinde.jpg"><br></cell>
+<cell><h3>Gewindeteller</h3></cell>
+<cell><img src="img/adapter.jpg"><br></cell>
+<cell><h3>Adapter</h3></cell>
+<cell><img src="img/bubblelevel.jpg"><br></cell>
+<cell><h3>Bubble level</h3></cell>
+</grid>
+

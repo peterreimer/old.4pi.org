@@ -1,0 +1,193 @@
+#include "layout.inc" select=tutorial_ptmorpher name=Tutorial
+#include "format.inc"
+<section    "Tutorial">
+<subsection "PTMorpher">
+
+
+<h2><en: A PTMorpher Example><de: Ein PTMorpher Beispiel></h2>
+<h3>Choose your subject</h3>
+
+<p>In September 2002 elections take place in Germany and now, during the election campains, the
+candidates of the two biggest parties give interviews wherever they can. In the 
+<em>ADAC Motorwelt</em>  7/2002, a monthly journal for members of this automobile club, 
+i found this two similar pictures of chancellor Schröder and his challenger Stoiber.
+Since this pictures where taken from almost identical angles, it would be easy to identify 
+enough control points for a test with PTMorpher.
+
+<h3>Preparing the input images</h3>
+
+<p>The images where scanned with a flatbed scanner and cropped to the same dimensions,
+950 pixel wide and 1200 pixel high in this case.
+The full sized images can be downloaded by clicking on the thumbnails below.
+<br>
+<br>
+<center>
+<grid layout=2x2
+      width=400
+      padding=3
+      align=cc>
+<cell><href url="img/schroeder.jpg" image="img/schroeder150.jpg" name="Schröder"></cell>
+<cell><href url="img/stoiber.jpg"   image="img/stoiber150.jpg"   name="Stoiber"></cell>
+<cell>Schröder (SPD)</cell>
+<cell>Stoiber (CSU)</cell>
+</grid>
+</center>
+
+
+<h3>Script</h3>
+
+<p>Although you can create a basic script with PTPicker, the Java frontend of
+PanoTools, i found it easier to create one from scratch, since you have to
+modify it anyway. 
+
+<p>PTMorpher needs information about the input, given in the lines starting
+with 'i' and about the desired output, given in the 'p' line. Since the PanoTools package 
+is mainly intended for the stitching of multiple images into a panorama, the 
+script contains many informations important for <em>PTStitcher</em>, 
+but which is not really relevant for <em>PTMorpher</em>.
+<br>
+<br>
+
+<script content="
+p f0 w238 h300 v5 a0 b1 c0.05 n\"JPEG\"<br>
+<br>
+i f0 w950 h1200 y0 p0 r0  v5 n\"schroeder.jpg\"<br>
+i f0 w950 h1200 y0 p0 r0  v5 n\"stoiber.jpg\"<br>
+">
+
+<h4>'i' lines</h4>
+
+<p>The two 'i' lines hold the information about the input images. 
+<em>w950</em> and <em>h1200</em> denote the image dimensions and <em>f0</em>
+specifies the projection format, which is rectlinear in this case. The 
+yaw (<em>y0</em>), pitch (<em>p0</em>) and roll (<em>r0</em>) angles should be 
+zero and the field of view can be set to an arbitrary value  (<em>v5</em>), 
+5° in this case.
+
+<h4>'p' line</h4>
+
+<p>This line holds the information about the desired morphing  sequence. The
+projection format and the field of view should be the same as for the input
+images: <em>f0</em> and <em>v5</em>. <em>h238</em> and <em>h300</em> give the 
+height and width of the resulting images. 
+The actual morphing sequence is specified by <em>a0 b1 c0.05</em>, which has 
+nothing to do with the correction factors for lens distortions.  <em>a</em>
+denotes starting value, <em>b</em> end value and <em>c</em> increment. 
+0 is left, 1 is right image. The above command morphs two images
+and creates 20 intermediate frames.
+(See also the file Optimizer_Script.txt in the subdirectory Script of PanoTools)
+
+
+
+<h3>Setting control points</h3>
+
+<p>Start ptpicker with the following command and load the script file. I'm working
+with Debian Linux and Sun's Java and this works for me. 
+
+<user command="java -Djava.library.path=/usr/lib -mx128m -jar ptpicker.jar">
+
+<p>You have to select lots of control points for a smooth transition between the two images.<br>
+<br>
+<center>
+<href url="img/morph1.jpg" image="img/morph1s.jpg" alt="selecting control points">
+</center>
+
+
+<h3>Setting triangles</h3>
+
+<p>When you have set all control points, you have to define triangles. This is done by selecting
+three points, either by drawing a frame around them or by clicking on each point with the shift
+key pressed down and then go to 'Edit&gt;Set Triangle'.
+It is advisable to switch to the 'Select mode', which allows the quick selection 
+of points without accidently setting new ones (Menu Edit&gt;Select).
+
+<p>Another, faster way is to perform an automatic triangulation of all points and finally do some
+finetuning by changing or removing some triangles. I'm not sure if it is supposed to work like
+this, since this method differs somewhat from the original 'Readme.html', but the following way works 
+for me:
+
+<p>It doesn't matter if you have selected any points, just go to 'Edit&gt;Triangulate', which will initiate
+the automatic triangulation. ptpicker doesn't respond for a while and at first glance nothing seems to have 
+happend. But when you select now one or more points, all of a sudden the triangles are created and our two 
+politicians look like victims of spiderman (see next screenshoot, click on it to get a magnified view).
+The triangles are only created in one window, but they can be 
+copied to the second window by 'Edit&gt;Copy Triangles'.
+
+<br><br>
+<center>
+<href url="img/morph2.jpg" image="img/morph2s.jpg" alt="automatic setted triangles">
+</center>
+
+<p>The automatic triangulation creates some unwanted triangles, as for example between the ears and the shoulder.
+Selecting the appropriate control points (red in above screenshot) and going to 'Edit&gt;Remove Triangle' 
+removes those. The next screenshot shows the final triangulation, after copying the triangles also to the 
+second window.
+<br>
+<br>
+
+<center>
+<href url="img/morph3.jpg" image="img/morph3s.jpg" alt="triangles after finetuning">
+</center>
+
+<p>The box below shows the script as it is saved by ptpicker. Some parameters are added,
+which are not relevant for PTMorpher and are thus ignored (u10 in the 'p' line for feathering 
+in panorama creation, X,Y,Z for PTStereo). The 'v'-lines are also ignored, since the Optimizer is not 
+needed for morphing.
+<p>
+The 'c' lines denote the control points and each 't' line stands for one triangle. There are two blocks
+of 't' lines, one for each image i0 and i1.
+<br>
+<br>
+
+
+<script content="
+p f0 w238 h300 v5 u10 a0 b1 c0.05 n\"JPEG\"<br>
+<br>
+i f0 w950 h1200 y0 p0 r0  v5 n\"schroeder.jpg\" X0 Y0 Z0<br>
+i f0 w950 h1200 y0 p0 r0  v5 n\"stoiber.jpg\" X1 Y0 Z0<br>
+v<br>
+v<br>
+c n0 N1 x599 y746 X585 Y740<br>
+c n0 N1 x625 y744 X619 Y731<br>
+c n0 N1 x640 y743 X645 Y721<br>
+c n0 N1 x570 y744 X545 Y750<br>
+[...]<br>
+t 1 0 20 i0<br>
+t 1 7 8 i0<br>
+t 1 18 2 i0<br>
+t 3 17 0 i0<br>
+[...]<br>
+t 1 0 20 i1<br>
+t 1 7 8 i1<br>
+t 1 18 2 i1<br>
+t 3 17 0 i1<br>
+[...]<br>
+">
+<p>Download the full script file <href url="script.txt" name="here">, if you want to try it yourself.
+
+<h3>Morphing</h3>
+<p>The morphing can be started by 'Project&gt;Morph' or using the command line:<br>
+
+<user command="PTMorpher script.txt -o result/schroiber">
+
+<p>This command will produce 20 images in the subdirectory "result", named schroiber.000 to schroiber.019. 
+It's advisable to save the output images in a separate directory, since it can be many.
+
+<h3>Result</h3>
+<p>The output images can be merged with PTStripe to a single stripe, suitable for PTViewer.
+An object movie of the animation can be found <href url="$(OBJECTS)/ptmorpher" name="here">.
+
+The following table shows a few intermediate views of the full sequence. Depending on the results of the 
+elections in September, Germany's new chancellor will look like one of those portraits ;-)<br>
+<center>
+<grid layout=6x3
+      align=rccccc
+      border=0
+      padding=5>
+<cell></cell><cell colspan="5"><img src="img/result.jpg"></cell>
+<cell>Schröder</cell><cell>100%</cell><cell>75%</cell><cell>50%</cell><cell>25%</cell><cell>0%</cell>
+<cell>Stoiber</cell><cell>0%</cell><cell>25%</cell><cell>50%</cell><cell>75%</cell><cell>100%</cell>
+</grid>
+</center>
+<p>
+

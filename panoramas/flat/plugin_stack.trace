@@ -1,0 +1,13 @@
+java.lang.IncompatibleClassChangeError
+	at java.awt.Component.getToolkitImpl(Component.java:824)
+	at java.awt.Component.getToolkit(Component.java:814)
+	at java.awt.LightweightDispatcher$2.run(Container.java:3358)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.LightweightDispatcher.stopListeningForOtherDrags(Container.java:3355)
+	at java.awt.LightweightDispatcher.dispose(Container.java:3095)
+	at java.awt.Container.removeNotify(Container.java:2071)
+	at java.awt.Container.removeNotify(Container.java:2068)
+	at java.awt.Container.removeAll(Container.java:794)
+	at sun.plugin.viewer.MNetscapePluginObject.setWindow(MNetscapePluginObject.java:264)
+	at sun.plugin.navig.motif.Plugin.doit(Plugin.java:276)
+	at sun.plugin.navig.motif.Plugin.start(Plugin.java:103)

@@ -1,0 +1,63 @@
+#include "layout.inc" select=panoramas_paris  name=Panoramas
+#include "ptviewer.inc"
+<section    "Panoramas">
+<subsection "Paris">
+
+<h2>{#SUBSECTION#}</h2>
+
+<div align="center">
+<protect>
+<applet archive=ptviewer.jar code=ptviewer.class name=ptviewer width=400 height=330>
+
+// list of panos
+
+<param name=pano0	value="
+	{file=panos/grandarche.jpg}
+	{auto=0.5}
+	{pan=-95}
+	{tilt=30}
+	{fov=98}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(-95,30,98,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(1)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(1)' p i'./img/next.gif'}">
+
+<param name=pano1	value="
+	{file=panos/opera.jpg}
+	{auto=0.5}
+	{pan=134}
+	{tilt=28}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(134,28,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(0)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(0)' p i'./img/next.gif'}">
+
+</applet>
+</protect>
+
+
+<br>
+<instructions>
+
+
+<table width=400 cellpadding=0>
+
+<view number = "0"
+      key    = "grandarche"
+      title  = "La Grand Arche de La D&eacute;fence"
+      desc   = "<en: Cubic building by the danish architect Otto von Spreckelsen>
+                <de: Würfelförmiges Gebäude des dänischen Architekten Otto von Spreckelsen>">
+		  
+<view number = "1"
+      key    = "opera"
+      title  = "Op&eacute;ra de Paris Garnier"
+      desc   = "<en: In the lounge of the Opera>
+                <de: Im Foyer der Oper>">
+</table>
+
+</center>
+
+

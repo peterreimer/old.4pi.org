@@ -1,0 +1,21 @@
+#include "layout.inc" select=tutorial_calibration name=Tutorial
+#include "format.inc"
+<section "Tutorial">
+<subsection "Calibration">
+<h2>{#SUBSECTION#}</h2>
+<p>
+My Filmscanner (CanoScan FS2710) can produces at highest resolution of 2720dpi
+an image with the dimensions 2592x3888 px. I usualy scan the negatives/slides with full resolution and reduce the image to half. That leaves me six images of 1296x1944 px with some junk from the film holder at the image border.
+
+<fig nr      = "1" 
+     content = "<img src="$(TUTORIAL)/img/raw-scans.jpg" alt="uncropped">"
+     caption = "Uncropped scans, each 1296x1944">
+
+
+<fig nr      = "2" 
+     content = "<img src="$(TUTORIAL)/img/cropped.jpg" alt="cropped">"
+     caption = "Cropped to 1260x1890 pixel">
+
+<fig nr      = "3" 
+     content = "<img src="$(TUTORIAL)/img/pano.jpg" alt="">"
+     caption = "Converted to pshere with guides">

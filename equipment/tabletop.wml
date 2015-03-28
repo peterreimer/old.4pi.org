@@ -1,0 +1,14 @@
+#include "layout.inc" select=equipment_tabletop name=Equipment
+#use wml::std::box
+#include "format.inc"
+
+<section    "<en: Equipment><de: Aurüstung>">
+<subsection "Tabletop">
+
+<h2>{#SUBSECTION#}</h2>
+
+<fig nr      = "1"
+     content = "<img src="$(EQUIPMENT)/img/tabletop.jpg">"
+     alt     = "Panorama head"
+     caption = "Lightweight tabletop panorama head">
+

@@ -1,0 +1,51 @@
+#include "layout.inc" select=home_select name=Home
+#include "format.inc"
+<section "<en: Log Book><de: Logbuch>">
+
+
+<h2>{#SECTION#}</h2>
+<p class="index">
+<table>
+<logbook date = "2003-02-15"
+         news = "
+	  <li>
+	    <en: Panorama in the lounge of>
+	    <de: Panorama im Foyer der>
+            <href url="$(PANORAMAS)/paris" name="Op&eacute;ra de Paris Garnier">
+	  </li>
+	 ">
+
+<logbook date = "2002-12-19"
+         news = "
+	<li>
+	  <en: added a perl script <em>ptscript</em> to the
+               <href url="$(DOWNLOADS)/" name="download section">.>
+	  <de: Perl Skript <em>ptscript</em> auf die
+               <href url="$(DOWNLOADS)/" name="download Seite"> gestellt.>
+	</li>
+	 ">
+<logbook date = "2002-12-11"
+         news = "
+	  <li>
+            <en: Complete new page design, now bilingual and including a search function>
+	    <de: Komplett neues Seiten Design, jetzt zweisprachig 
+	         und einschließlich einer Such-Funktion>
+   	  </li>
+	  <li>
+            <en: Panorama of Anonymusstatue at Castle Vajdahunyad in>
+	    <de: Panorama der Anonymusstatue bei Burg Vajdahunyad in>
+            <href url="$(PANORAMAS)/budapest" name="Budapest">
+	  </li>
+	 ">
+<logbook date = "2002-07-12"
+         news = "
+	  <li>
+	    <en: Panorama of the Grand Arche in >
+	    <de: Panorama des Grand Arche in>
+            <href url="$(PANORAMAS)/paris" name="Paris">
+	  </li>
+	  <li>
+            <href url="$(TUTORIAL)/ptmorpher" name="PTMorpher Tutorial">
+	  </li>
+	 ">
+</table>

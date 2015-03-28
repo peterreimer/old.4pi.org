@@ -1,0 +1,347 @@
+
+body,p {
+  font-family: helvetica, verdana, arial, helvetica, sans-serif;
+  font-size:10px;
+  background-color: #ffffff;
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:5px;
+  margin-right:5px;
+  border-width: 0 0 0 0;
+  border-style: none none none none;
+}
+.blue {
+  color: #205f9d;
+}
+.green {
+  color: #0c8b45;
+}
+
+.popup {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:10px;
+  background-color: #ffffff;
+  margin:10px;
+  border-width: 0 0 0 0;
+  border-style: none none none none;
+}
+.head {
+  background-color: #dddddd
+  }
+.odd  {
+  background-color: #eeeeee
+  }
+.even {
+  background-color: #ffffff
+}
+.equation {
+  margin-top:10px;
+  margin-bottom:10px;
+  text-align: center;
+}
+tt {
+  font-family: lucida console, 
+}
+h1 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  background-color: #ffffff;
+  color:#cc6600;
+  font-size:15pt;
+}
+.error {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color:red;
+}
+h2 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color:#cc6600;
+  background-color: #ffffff;
+  margin-bottom:5px;
+  background-image:url(/img/subnav_dot.gif);
+  background-position:bottom;
+  background-repeat:repeat-x;
+  font-size:14pt;
+}
+h3 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  background-color: #ffffff;
+  color:#cc6600;
+  font-size:13pt;
+}
+h3.thumbs {
+  font-family: verdana, arial, helvetica, sans-serif;
+  background-image:url(/img/subnav_dot.gif);
+  margin-top:5px;
+  background-position:bottom;
+  background-repeat:repeat-x;
+}
+ul {
+  list-style-type:square;
+}
+li {
+  text-align:left;
+  font-size: 11pt;
+  color:#4c4c4c;
+  padding:0pt;
+  margin-top:0pt;
+}
+
+p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-align:justify;
+  font-size: 11pt;
+  color:#4c4c4c;
+}
+p.thumbs {
+ font-family: verdana, arial, helvetica, sans-serif;
+ text-align:left;
+ margin-top:0px;
+ padding-left:5px;
+}
+p.index {
+ font-family: verdana, arial, helvetica, sans-serif;
+ text-align:left;
+ margin-top:0px;
+ padding-left:0px;
+}
+p.subnavHeader {
+  text-align:left;
+  font-weight: bold;
+  font-size: 11pt;
+  color:#4c4c4c;
+  background-image:url(../img/subnav_dot.gif);
+  background-repeat:repeat-x;
+  background-position:bottom;
+  margin:0px;
+}
+p.subnavTitle {
+  text-align:left;
+  font-weight: bold;
+  font-size: 12pt;
+  color:#4c4c4c;
+  margin:0px;
+}
+p.subnav {
+  text-align:left;
+  font-size: 11pt;
+  color:#4c4c4c;
+  margin:0px;
+}
+
+p.bash {
+  text-align:left;
+  font-family: lucida console, courier;
+  text-align:left;
+  margin-left:20px;
+  margin-right:5px;
+  text-decoration:none;
+}
+.output {
+  text-align:left;
+  font-family: lucida console, courier;
+  font-size: 10pt;
+  text-align:left;
+  background-color:#e7e7e7;
+  padding:10px;
+  text-decoration:none;
+}
+.script {
+  text-align:left;
+  font-size: 10pt;
+  font-family: lucida console, courier;
+  background-color:#ffffff;
+  color:#000000;
+  margin-left:5px;
+  margin-right:5px;
+  text-decoration:none;
+}
+
+input, textarea {
+   border:1px solid #4c4c4c; 
+}
+.knopf {
+  cursor:pointer;
+}
+.mail {
+  width: 300px;
+}
+.mailto {
+  width: 300px;
+  color:#696969;
+}
+.select {
+  width: 200px;
+}
+.comment{
+  width: 400px;
+}
+em{
+  font-style:italic;
+  font-weight:normal ;
+}
+
+em.date{
+  font-style: italic;
+}
+
+table.header{
+  background-image:url(../img/header_background.jpg);
+  background-color:#ffffff;
+  background-repeat:no-repeat;
+}
+table.subnav{
+  background-image:url(../img/subnav_background.png);
+  background-color:#ffffff;
+  background-repeat:no-repeat;
+}
+td,th {
+  color:#4c4c4c;
+  font-size:11pt;
+}
+.body
+{
+  margin:15px;
+  padding:15px;
+}
+.header_right {
+  background-image:url(../img/subnav_rightmiddle.gif);
+  background-repeat:repeat-y;
+  background-position:bottom;
+  vertical-align:bottom;
+  text-align:left;
+}
+.header_top {
+  background-image:url(../img/subnav_topmiddle.gif);
+  background-repeat:repeat-x;
+  vertical-align:top;
+}
+.header_left {
+  background-image:url(../img/subnav_leftmiddle.gif);
+  background-repeat:repeat-y;
+  vertical-align:top;
+  text-align:left;
+}
+.header_bottom,.subnav_bottom {
+  background-image:url(../img/subnav_bottommiddle.gif);
+  background-repeat:repeat-x;
+  background-position:bottom;
+  vertical-align:bottom;
+}
+.subnav_top{
+  background-image:url(../img/subnav_topmiddle.gif);
+  background-repeat:repeat-x;
+  vertical-align:bottom;
+  color:#443935;
+/*  font-size: 15pt;
+  font-weight:bold;*/
+  padding-bottom:20pt;
+  padding-top:10pt;
+}
+.subnav_top2{
+  vertical-align:bottom;
+
+}
+.subnav_left{
+  vertical-align:top;
+  background-image:url(../img/subnav_leftmiddle.gif);
+  background-repeat:repeat-y;
+}
+.subnav_link{
+  vertical-align:middle;
+  font-size: 12pt;
+  font-weight: bold;
+  background-image:url(../img/subnav_dot.gif);
+  background-repeat:repeat-x;
+  background-position:bottom;
+
+ /* background-image:url(/img/subnav_leftmiddle.png);*/
+}
+.subnav_right{
+  vertical-align:top;
+  background-image:url(../img/subnav_rightmiddle.gif);
+  background-repeat:repeat-y;
+}
+.box_title{
+  background-color: #d7d7d7;
+  font-size: 12pt;
+  color:#4c4c4c;
+  font-weight:bold ;
+}
+.box_body{
+  background-color: #f7f7f7;
+}
+.box_rt{
+  background-image:url(../img/shd_rm.png);
+  background-repeat:repeat-y;
+  vertical-align:top;
+}
+.box_bl{
+  background-image:url(../img/shd_bm.png);
+  background-repeat:repeat-x;
+  vertical-align:top;
+}
+.box_rt{
+  background-image:url(../img/shd_rm.png);
+  background-repeat:repeat-y;
+  vertical-align:top;
+}
+
+
+div.footer {
+  border: 0px;
+  width:100%;
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-align:center;
+}
+
+
+/* Reihenfolge: :link, :visited, :hover, :active. */
+
+
+/* normale links */
+
+a:link {
+  color:#3da8c8;
+  text-decoration:none;
+}
+a:visited {
+  color:#3366cc;
+  text-decoration:none;
+}
+a:hover {
+   color:#cc6600;
+}
+
+/* links auf der startseite*/
+h2 a:link {
+  color:#cc6600;
+  text-decoration:none;
+}
+h2 a:visited {
+  color:#cc6600;
+  text-decoration:none;
+}
+h2 a:hover {
+  color:#cc6600;
+  text-decoration:none;
+}
+
+
+/* links in Naviagtionsleiste*/
+
+a.nav-n:link {
+  color:#443935;
+  text-decoration:none;
+}
+a.nav-n:visited {
+  color:#3366cc;
+  text-decoration:none;
+}
+a.nav-n:hover {
+  color:#000000;
+  text-decoration:underline;
+}
+
+img {
+    border: 0px;
+}

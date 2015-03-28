@@ -1,0 +1,28 @@
+#include "layout.inc" select=tutorial_introduction name=Tutorial
+#include "format.inc"
+<section "Tutorial">
+<subsection "<en: Introduction>
+	     <de: Einleitung>"
+>
+  
+<h1>{#SECTION#}</h1>
+<h2>{#SUBSECTION#}</h2>
+<p>
+<en: 
+This is intended to be a Tutorial for the use of Helmut Derschs Panorama Tools on Linux. The information here is either from my own experiences with this software, or adapted from other tutorials available on the web. Another great source of information is the proj-imim mailing list.>
+<de: 
+Sowohl für Windows als auch für Mac gibt es eine breite Palette an Programmen,
+um eine Reihe von Einzelaufnahmen zu einem nahtlosen Panorama zusammenzufügen. Unter
+<a href="http://www.panoguide.com" title="panoguide.com - the guide to panoramic photography">
+panoguide.com</a> findet sich ein ausführlicher Vergleich der verfügbaren
+Software. <em>Panorama Tools</em> von <href url="http://www.fh-furtwangen.de/~dersch/"
+name="Helmut Dersch"> ist die einzige software, die auch unter Linux eingesetzt werden kann.
+>
+#<br>
+#<href url="$(PDF)/ptmanual.pdf" image="$(IMG)/icon_pdf.gif">
+#<p><de: Zum Betrachten der Datei benötigen Sie den Acrobat Reader>
+#   <en: bla></p>
+#
+#<href url="http://www.adobe.de/products/acrobat/readstep.html"
+#     image="$(IMG)/getacro.gif">
+

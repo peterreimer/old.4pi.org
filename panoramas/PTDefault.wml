@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>4pi.org - PTDefault.html</title>
+</head>
+<body>
+<protect>
+{file=ptviewer:0}
+{barcolor=4c4c4c}
+{bar_x=50}
+{bar_y=220}
+{bar_width=302}
+{bar_height=7}
+{view_width=398}
+{view_height=223}
+{view_x=1}
+{view_y=31}
+{wait=./img/wait.jpg}
+{frame=./img/controls.gif}
+{cursor     =MOVE}
+
+
+// common controls for all panos
+{shotspot0=x15 y280 a34 b299 u'ptviewer:ZoomIn()'  p i'./img/zoomin.gif'}
+{shotspot1=x40 y280 a59 b299 u'ptviewer:ZoomOut()' p i'./img/zoomout.gif'}
+{shotspot2=x180 y283 a193 b296 u'ptviewer:startAutoPan(-0.5,0,1)' p i'./img/left.gif'}
+{shotspot3=x206 y283 a219 b296 u'ptviewer:startAutoPan(0.5,0,1)' p i'./img/right.gif'}
+{shotspot4=x193 y270 a206 b283 u'ptviewer:startAutoPan(0,0.5,1)' p i'./img/up.gif'}
+{shotspot5=x193 y296 a206 b309 u'ptviewer:startAutoPan(0,-0.5,1)' p i'./img/down.gif'}
+{shotspot6=x193 y283 a206 b296 u'ptviewer:stopAutoPan()'  p i'./img/stop.gif'}
+
+</protect>
+</body>
+</html>

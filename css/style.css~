@@ -1,0 +1,222 @@
+body {
+/*  background-image:url(/img/body.png);*/
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:10px;
+  background-repeat:repeat-x;
+  background-color: #ffffff;
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:5px;
+  margin-right:5px;
+  border-width: 0 0 0 0;
+  border-style: none none none none;
+}
+h1 {
+  color:#7a6f6a;
+}
+.error {
+  color:red;
+}
+h2 {
+  color:#ffa500;
+}
+h3 {
+  color:#ffa500;
+}
+p {
+  text-align:justify;
+  font-size: 12pt;
+  color:#4c4c4c;
+}
+p.subnavHeader {
+  text-align:left;
+  font-weight: bold;
+  font-size: 14pt;
+  color:#4c4c4c;
+  background-image:url(/img/subnav_dot.gif);
+  background-repeat:repeat-x;
+  background-position:bottom;
+
+}
+p.subnavTitle {
+  text-align:left;
+  font-weight: bold;
+  font-size: 14pt;
+  color:#4c4c4c;
+}
+
+p.bash {
+  font-family: courier;
+  text-align:left;
+  margin-left:20px;
+  margin-right:5px;
+  text-decoration:none;
+}
+.output {
+  font-family: courier;
+  text-align:left;
+  background-color:#e7e7e7;
+  padding:10px;
+  text-decoration:none;
+}
+.script { font-size: 10pt;
+           font-family: courier;
+           background-color:#ffffff;
+           color:#000000;
+           margin-left:5px;
+           margin-right:5px;
+           text-decoration:none;
+}
+
+
+em{
+  font-style:italic;
+  font-weight:normal ;
+}
+
+em.date{
+  font-style: italic;
+  font-weight: bold;
+}
+
+table.header{
+  background-image:url(/img/header_background.jpg);
+  background-color:#ffffff;
+  background-repeat:no-repeat;
+}
+table.subnav{
+  background-image:url(/img/subnav_background.png);
+  background-color:#ffffff;
+  background-repeat:no-repeat;
+}
+td {
+  color:#4c4c4c;  
+}
+.body
+{
+  margin:15px;
+  padding:15px;
+}
+.header_right {
+  background-image:url(/img/subnav_rightmiddle.gif);
+  background-repeat:repeat-y;
+  background-position:bottom;
+  vertical-align:bottom;
+  text-align:left;
+}
+.header_top {
+  background-image:url(/img/subnav_topmiddle.gif);
+  background-repeat:repeat-x;
+  vertical-align:top;
+}
+.header_left {
+  background-image:url(/img/subnav_leftmiddle.gif);
+  background-repeat:repeat-y;
+  vertical-align:top;
+  text-align:left;
+}
+.header_bottom,.subnav_bottom {
+  background-image:url(/img/subnav_bottommiddle.gif);
+  background-repeat:repeat-x;
+  background-position:bottom;
+  vertical-align:bottom;
+}
+.subnav_top{
+  background-image:url(/img/subnav_topmiddle.gif);
+  background-repeat:repeat-x;
+  vertical-align:bottom;
+  color:#443935;
+/*  font-size: 15pt;
+  font-weight:bold;*/
+  padding-bottom:20pt;
+  padding-top:10pt;
+}
+.subnav_top2{
+  vertical-align:bottom;
+
+}
+.subnav_left{
+  vertical-align:top;
+  background-image:url(/img/subnav_leftmiddle.gif);
+  background-repeat:repeat-y;
+}
+.subnav_link{
+  vertical-align:middle;
+  font-size: 12pt;
+  font-weight: bold;
+  background-image:url(/img/subnav_dot.gif);
+  background-repeat:repeat-x;
+  background-position:bottom;
+
+ /* background-image:url(/img/subnav_leftmiddle.png);*/
+}
+.subnav_right{
+  vertical-align:top;
+  background-image:url(/img/subnav_rightmiddle.gif);
+  background-repeat:repeat-y;
+}
+.box_title{
+  background-color: #d7d7d7;
+  font-size: 12pt;
+  color:#4c4c4c;
+  font-weight:bold ;
+}
+.box_body{
+  background-color: #f7f7f7;
+}
+.box_rt{
+  background-image:url(/img/shd_rm.png);
+  background-repeat:repeat-y;
+  vertical-align:top;
+}
+.box_bl{
+  background-image:url(/img/shd_bm.png);
+  background-repeat:repeat-x;
+  vertical-align:top;
+}
+.box_rt{
+  background-image:url(/img/shd_rm.png);
+  background-repeat:repeat-y;
+  vertical-align:top;
+}
+
+
+div.footer {
+  bottom:0px;
+  width:100%;
+  text-align:center;
+}
+
+
+/* Reihenfolge: :link, :visited, :hover, :active. */
+
+
+/* normale links */
+
+a:link {
+  color:#3366cc;
+  text-decoration:none;
+}
+a:visited {
+  color:#3366cc;
+  text-decoration:none;
+}
+a:hover {
+  color:#ff9900;
+/*  text-decoration:underline;*/
+}
+
+/* links in Naviagtionsleiste*/
+/*
+a.nav-n:link {
+  color:#443935;
+  text-decoration:none;
+}
+a.nav-n:visited {
+  color:#3366cc;
+  text-decoration:none;
+}
+a.nav-n:hover {
+  color:#cccccc;
+}
+*/

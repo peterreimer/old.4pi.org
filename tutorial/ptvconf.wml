@@ -1,0 +1,221 @@
+#use wml::std::info
+#use wml::std::grid
+#use wml::std::lang
+#use wml::std::href
+#use wml::fmt::isolatin
+#use wml::des::navbar
+
+<lang:new id=en short>
+<lang:new id=de short>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+   <head>
+      <title>PTViewer Configurator</title>
+      <link REL="stylesheet" TYPE="text/css" HREF="ptvconf.css">
+      <link REL="shortcut icon" HREF="$(IMG)/favicon.ico">
+      <script language="JavaScript" type="text/javascript" src="ptvconf.js"></script>
+   </head>
+<body bgcolor="#ffffff" text="#000000" onLoad="turnOn('Tab1', 'Folder1');window.name='ptvconf';">
+
+ <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+ <script  type="text/javascript" language="JavaScript" src="../jscript/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
+
+<form name="" action="">
+<select name="selectPanorama" size="1">
+	<option>dhm1.jpg</option>
+	<option>ahorn.jpg</option>
+	<option>anonymous.jpg</option>
+	<option>belem.jpg</option>
+	<option>biergarten.jpg</option>
+	<option>brighton.jpg</option>
+	<option>dach.jpg</option>
+	<option>dartmoor.jpg</option>
+	<option>egeskov1.jpg</option>
+	<option>egeskov2.jpg</option>
+	<option>elisabeth.jpg</option>
+	<option>expo.jpg</option>
+	<option>festung1.jpg</option>
+	<option>festung2.jpg</option>
+	<option>garten.jpg</option>
+	<option>grandarche.jpg</option>
+	<option>greenhouse.jpg</option>
+	<option>hellbrunn.jpg</option>
+	<option>illumina.jpg</option>
+	<option>joycebb.jpg</option>
+	<option>koeln.jpg</option>
+   </select>
+   <INPUT TYPE="button" class="knopf" name="loadPano" value="load panorama"
+			onClick="loadPanorama()"
+			onmouseover="return overlib('Load selected panorama.');"
+			onmouseout="return nd();"><br>
+</form>
+
+<!-- Create Tabs -->
+<div id="Tab1" class="tab" onClick="javascript:turnOn('Tab1', 'Folder1');">
+  <a href="javascript:turnOn('Tab1', 'Folder1');">Basics</a>
+</div>
+
+<div id="Tab2" class="tab" onClick="javascript:turnOn('Tab2', 'Folder2');">
+  <a href="javascript:turnOn('Tab2', 'Folder2');"><en: Bar><de: Balken></a>
+</div>
+
+<div id="Tab3" class="tab" onClick="javascript:turnOn('Tab3', 'Folder3');">
+  <a href="javascript:turnOn('Tab3', 'Folder3');">Tour</a>
+</div>
+
+<div id="Tab4" class="tab" onClick="javascript:turnOn('Tab4', 'Folder4');">
+  <a href="javascript:turnOn('Tab4', 'Folder4');">Advanced</a>
+</div>
+
+<div id="lang" >
+
+    <en: <href url   = "$(WML_SRC_BASENAME).de.html"
+               image = "$(IMG)/de.png\" title=\"umschalten auf deutsch"
+               hint  = "umschalten auf deutsch">&nbsp;
+         <img  src   = "$(IMG)/en.png">>
+    
+    <de: <img  src   = "$(IMG)/de.png">&nbsp;
+         <href url   = "$(WML_SRC_BASENAME).en.html"
+               image = "$(IMG)/en.png\" title=\"switch to english"
+               hint  = "switch to english">>
+
+</div>
+
+<!-- Create Folders -->
+<div id="Folder1" class="folder"><form name="basics" action=""> 
+
+  
+  
+	<table>
+	<tr>
+		<td colspan=2><h1>Applet</h1></td>
+		<td colspan=2><h1>View</h1></td>
+	</tr>
+	<tr>
+		<td><en: Name><de: Name>:</td>
+		<td><input class="text" name="appletName" value="ptviewer"></td>
+		 <td><tt>view_width:</tt></td>
+		 <td><input class="text" size="7" name="ptvViewWidth" value="">px</td>
+	</tr>
+	<tr>
+		<td><en: Archive><de: Archiv>:</td>
+		<td><input class="text" name="appletArchive" value="ptviewer.jar"></td>
+		<td><tt>view_height:</tt></td>
+		<td><input class="text" size="7" name="ptvViewHeight" value="">px</td>
+	</tr>
+	<tr>
+		<td><en: Width><de: Breite>:</td>
+		<td><input class="text" name="appletWidth" value="320"size="4">px</td>
+		<td><tt>view_x:</tt></td>
+		<td><input class="text" size="7" name="ptvViewX" value="">px</td>
+	</tr>
+	<tr>
+		<td><en: Height><de: Höhe>:</td>
+		<td><input class="text" name="appletHeight" value="200" size="4">px</td>
+		<td><tt>view_y:</tt></td>
+		<td><input class="text" size="7" name="ptvViewY" value="">px</td>
+	</tr>
+	<tr>
+		<td>mayscript</td>
+		<td><input type="checkbox" name="appletMayscript" value=""></td>
+	</tr>
+</table>
+  
+  <h1>PTViewer</h1>
+  
+  <table>
+  <tr>
+    <td><tt>bgcolor:</tt></td>
+    <td><input class="text" size="7" name="ptvBgColor" value="c0c0c0">,
+    Hexadecimal integer specifying color of background
+    <href url="javascript:showColorPalette();" name="show palette">
+    <href url="javascript:test();" name="test">
+    </td>
+	</tr>
+	<tr>
+		<td valign="top"><tt>quality:</tt></td>
+		<td><input type="radio" name="ptvQuality" value="0"
+						onmouseover="return overlib('<b>Quality 0:</b><br>panning: nn<br>autopanning: nn<br>stills: nn.');"
+						onmouseout="return nd();">0
+				<input type="radio" name="ptvQuality" value="1"
+						onmouseover="return overlib('<b>Quality 1:</b><br>panning: nn<br>autopanning: nn<br>stills: bi.');"
+						onmouseout="return nd();">1
+				<input type="radio" name="ptvQuality" value="2"
+						onmouseover="return overlib('<b>Quality 2:</b><br>panning: nn<br>autopanning: bi<br>stills: bi.');"
+						onmouseout="return nd();">2
+				<input type="radio" name="ptvQuality" value="3" checked
+						onmouseover="return overlib('<b>Quality 3:</b>(default)<br>panning: bi<br>autopanning: bi<br>stills: bi.');"
+						onmouseout="return nd();">3
+				<br>(nn: nearest neighbor, bi: bilinear)
+		</td>
+	</tr>
+	<tr>
+		<td><tt>cursor:</tt></td>
+		<td><input type="radio" name="ptvCursor" value="crosshair"
+						onmouseover="return overlib('');"
+						onmouseout="return nd();"><en: crosshair><de: Fadenkreuz> (<img src="img/crosshair.gif">)
+				<input type="radio" name="ptvCursor" value="move"
+						onmouseover="return overlib('');"
+						onmouseout="return nd();"><en: move><de: Doppelpfeil> (<img src="img/move.gif">)
+				<input type="radio" name="ptvCursor" value="defaultpointer" checked
+						onmouseover="return overlib('');"
+						onmouseout="return nd();"><en: default mouse pointer><de: Standard Mauszeiger>
+				
+		</td>
+	</tr>
+	<tr>
+		<td><tt>mass:</tt></td>
+		<td><INPUT TYPE="checkbox" class="check" name="ptvMass">
+			mass, delayed response, useful range: 10-30 
+        <INPUT TYPE="text" size=6 name="ptvMassValue" value="0">
+		</td>
+	</tr>
+
+</table>
+
+  
+  <div id="viewerdim">
+  <img src="img/viewer_dims.gif">
+  </div>
+</form></div>
+
+<div id="Folder2" class="folder">
+  <h1>Progress Bar</h1>
+</div>
+
+<div id="Folder3" class="folder">
+  <h1>Guided Tour</h1>
+</div>
+
+<div id="Folder4" class="folder">
+  <h1>Advanced</h1>
+</div>
+
+<div id="ButtonBar">
+<form name="AppletDetails" action="">
+<INPUT TYPE="button" class="knopf" name="createappletcode" value="Create Applet Code"
+	onClick="createAppletCode();"
+	onmouseover="return overlib('Write the PTViewer applet code into the textbox below.');"
+	onmouseout="return nd();">
+<INPUT TYPE="button" class="knopf" name="selectcode" value="Select Applet Code"
+	onClick="document.coordinates.appletcode.select();"
+	onmouseover="return overlib('Highlight the code and copy it into your own HTML page.');"
+	onmouseout="return nd();">
+<INPUT TYPE="button" class="knopf" name="preview" value="Preview in popup"
+	onClick="openPreview();"
+	onmouseover="return overlib('This will create a little popup window displaying your tour.');"
+	onmouseout="return nd();">
+<br>
+ <textarea class="appletcode" cols="30" rows="20" name="appletcode">
+Click on the button to generate the PTViewer applet code
+  </textarea>
+</form>
+</div>
+
+
+
+</body></html>

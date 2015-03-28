@@ -1,0 +1,18 @@
+#include "layout.inc" select=home_select name=Home
+#include "kasten.inc"
+#use wml::std::box
+<section " <en: Error 500 >
+             <de: Fehler 500>"
+>
+
+<h1 class="error"><en: we're very sorry!><de: Ups! ></h1>
+<p> The page you requested can not be found.
+
+<ul>
+<li>If you typed the URL yourself, please make sure that the spelling is correct.
+<li>If you clicked on a link to get here, there may be a problem with the link. 
+<li>Try using your browser's "back" button or the "return to previous page" 
+   link below to choose a different link on that page, or use search
+   to find what you are looking for.
+</ul>
+					

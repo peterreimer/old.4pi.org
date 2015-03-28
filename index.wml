@@ -1,0 +1,83 @@
+#include "layout.inc" select=home_select name="Home"
+#include "format.inc"
+<section "<en: Welcome!><de: Willkommen!>">
+<h1><en: Spherical Panoramas and Object Movies>
+    <de: Sphärische Panoramen und Objekt Filme></h1>
+
+<table width="100%" border=0 cellpadding="5">
+<tr>
+  <td width=50% valign="top">
+
+    <h2>
+        <a href="$(PANORAMAS)/"><en: Panoramas><de: Panoramen> <img src="$(IMG)/arrow.png"></a>
+    </h2> 
+    
+    
+    <p class="index">
+        <en: Probably the most interesting part of this site. Here you will find mostly
+             spherical panoramas, which means that you can not only turn around 360°, but also 
+             look up and down. Immerse yourself...>
+        <de: Wahrscheinlich der interessanteste Teil dieser Homepage. Hier gibt es zumeist 
+             sphärische Panoramen zu sehen, d.h. man kann sich nicht nur um 360° drehen, 
+             sondern auch  nach oben und unten sehen. Tauchen Sie ein...>
+    </p>
+    
+    <h2>
+        <a href="$(OBJECTS)/"><en: Objects><de: Objekte> <img src="$(IMG)/arrow.png"></a>
+    </h2>
+    <p class="index">
+        <en: Object Movies are almost the opposite to panoramas: instead of turning yourself 
+             in space you can turn and behold an object as if you would hold it in your hands.>
+        <de: Objektfilme sind fast das Gegenteil zu Panoramen: anstatt sich selbst im Raum zu drehen
+             kann man einen Gegenstand drehen und betrachten, als ob man ihn in den Händen halten würde.>
+    </p>
+    
+    <h2>
+        <a href="$(TUTORIAL)/"><en: Tutorial><de: Tutorial> <img src="$(IMG)/arrow.png"></a>
+    </h2>
+    
+    <p class="index">
+    <en: I have just started to write this tutorial about shooting panoramas
+         and the use and installation of 
+        <href url="http://www.fh-furtwangen.de/~dersch" name="Helmut Dersch's Panorama Tools">
+        under Linux. There is not much yet, but it will grow over time.    >
+    <de: Ich habe angefangen, eine Anleitung zum Erstellen von Panoramen und der Installation
+         und Benutzung von 
+        <href url="http://www.fh-furtwangen.de/~dersch" name="Helmut Dersch's Panorama Tools">
+        unter Linux zu schreiben. Es gibt noch nicht viel zu lesen, aber das wird sich mit der Zeit ändern.
+    >
+    </td>
+    <td width="50%" valign="top">
+    
+    <h2>
+        <a href="$(EQUIPMENT)/"><en: Equipment><de: Ausrüstung> <img src="$(IMG)/arrow.png"></a>
+    </h2>
+    <p class="index">
+    <en: A description of a homemade panoramic head.>
+    <de: Eine Beschreibung eines Eigenbau Panorama-Kopfes.>
+    </p>
+    
+    <h2>
+        <a href="$(DOWNLOADS)/"><en: Downloads><de: Downloads> <img src="$(IMG)/arrow.png"></a>
+    </h2>
+    <p class="index">
+    <en: Some little scripts for a more convenient use of Panorama Tools.>
+    <de: Einige kleine Skripte zur einfacheren Anwendung von Panorama Tools.>
+    </p>
+    <h2>
+        <a href="$(CONTACT)/"><en: Contact><de: Kontakt> <img src="$(IMG)/arrow.png"></a>
+    </h2>
+    <p class="index">
+        <en: Any comments, remarks, critics?>
+        <de: Kommentare, Anmerkungen, Kritik?>
+    </p>
+
+</td>
+</tr>
+</table>
+<p><br>
+<en: enjoy>
+<de: viel Spaß>
+<br>
+<br>
+<img src="$(IMG)/unterschrift.png" name="Peter Reimer">

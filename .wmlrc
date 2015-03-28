@@ -1,0 +1,21 @@
+-I include
+
+-D BASE_URL=http://www.4pi.org
+-D BASE_DIR~.
+-D WML_GEN_REALNAME="Peter Reimer"
+-D WML_GEN_USERNAME="peter"
+-D WML_GEN_HOSTNAME="reimer-web.de"
+
+
+-D ROOT~.
+-D PANORAMAS~./panoramas
+-D OBJECTS~./objects
+-D TUTORIAL~./tutorial
+-D EQUIPMENT~./equipment
+-D DOWNLOADS~./downloads
+-D CONTACT~./contact
+-D GUESTBOOK~./guestbook
+-D SITEMAP~./sitemap
+-D IMG~./img
+-D PDF~./pdf
+-D CSS~./css

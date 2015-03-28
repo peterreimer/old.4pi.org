@@ -1,0 +1,24 @@
+#include "layout.inc" select=objects_sphere name=Objects
+<section "Objects">
+<subsection "Spherical Panorama">
+
+
+<h2>Spherical Panorama</h2>
+<p>
+<center>
+<protect>
+<applet name=ptviewer archive=ptobject.jar code=ptviewer.class width=240 height=180>
+<param name=auto    value=1>
+<param name=applet0 value="{code=ptobject.class}
+                           {file=obj/pano#.jpg}
+                           {nhor=12}
+                           {nver=7}">
+<param name=inits value="ptviewer:startApplet(0)">
+</applet>
+													    
+</protect>
+<p>
+Rendered with <href url="http://www.povray.org" name="POV-Ray">.<br>
+The usual view of this panorama can be found 
+<href url="$(PANORAMAS)/haseluenne.<en: en><de: de>.html" name="here">.
+</center>

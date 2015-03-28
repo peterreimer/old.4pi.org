@@ -1,0 +1,148 @@
+#include "layout.inc" select=panoramas_krefeld  name=Panoramas
+#include "ptviewer.inc"
+<section    "Panoramas">
+<subsection "Krefeld">
+
+<h2>{#SUBSECTION#}</h2>
+
+<center>
+<protect>
+<applet archive=ptviewer.jar code=ptviewer.class name=ptviewer width=400 height=330>
+
+// list of panos
+
+<param name=pano0	value="
+	{file=panos/krefeld.jpg}
+	{auto=0.5}
+	{pan=20}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(20,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(4)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(1)' p i'./img/next.gif'}">
+
+<param name=pano1	value="
+	{file=panos/dach.jpg}
+	{auto=0.5}
+	{pan=20}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(20,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(0)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(2)' p i'./img/next.gif'}">
+
+
+<param name=pano2	value="
+	{file=panos/moltke.jpg}
+	{auto=0.5}
+	{pan=0}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=0.5}
+	{inits=ptviewer:startApplet(0)}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(0,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(1)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(3)' p i'./img/next.gif'}">
+
+<param name=pano3	value="
+	{file=panos/elisabeth.jpg}
+	{auto=0.5}
+	{pan=0}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=0.5}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(0,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(1)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(3)' p i'./img/next.gif'}">
+
+<param name=pano4	value="
+	{file=panos/illumina.jpg}
+	{auto=0.5}
+	{pan=1.30}
+	{tilt=11}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=0.5}
+	{inits=ptviewer:startApplet(0)}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(1.3,11,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(2)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(4)' p i'./img/next.gif'}">
+
+<param name=pano5	value="
+	{file=panos/lastnight1.jpg}
+	{auto=0.5}
+	{pan=1.30}
+	{tilt=11}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=0.5}
+	{inits=ptviewer:startApplet(0)}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(1.3,11,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(3)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(0)' p i'./img/next.gif'}">
+
+
+<param name=applet0     value="{code= ptzoom.class} 
+                               {file=zoom/moltke1.jpg}
+                               {pan=-14.1929}
+                               {tilt=0.618258}
+                               {rot=-0.564368}
+			       {fov=6.82786}">
+
+
+</applet>
+</protect>
+
+
+<br>
+
+<instructions>
+
+
+<table width=400 cellpadding=0>
+
+<view number = "0"
+      key    = "krefeld"
+      title  = "Krefeld "
+      desc   = "Krefeld Hauptbahnhof">
+		  
+<view number = "1"
+      key    = "dach"
+      title  = "Room with a view "
+      desc   = "A look in and out of our living room">
+
+<view number = "2"
+      key    = "moltke"
+      title  = "Moltke Gymnasium Krefeld "
+      desc   = "Zoom in to get a detailed view of the church
+               <href url="www.moltke-krefeld.de" name="(homepage)">">
+
+<view number = "3"
+      key    = "elisabeth"
+      title  = "<en: Elisabeth church in Krefeld>
+                <de: Elisabethkirche in Krefeld>"
+      desc   = "<en: We got married here>
+                <de: Hier haben wir geheiratet>">
+
+<view number = "4"
+      key    = "illumina"
+      title  = "Illumina at Burg Linn"
+      desc   = "Light and Sound installation in June 2002">
+
+<view number = "5"
+      key    = "lastnight1"
+      title  = "The CTI Last Night of the Proms, September 2003"
+      desc   = "<en: Not the original in the Royal Albert Hall in London, but on the same evening.>
+			          <de: Nicht das Original in der Royal Albert Hall in London, aber am gleichen Abend.>">
+
+</table>
+
+</center>
+
+

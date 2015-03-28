@@ -1,0 +1,66 @@
+#include "layout.inc" select=panoramas_lapalma name=Panoramas
+#include "ptviewer.inc"
+<section    "Panoramas">
+<subsection "La Palma">
+
+<h2>{#SUBSECTION#}</h2>
+
+<div align="center">
+<protect>
+<applet archive="ptviewer.jar" code="ptviewer.class" name="ptviewer" width="400" height="330">
+
+// list of panos
+
+<param name="pano0"	value="
+	{file=panos/laschozas.jpg}
+	{auto=0.5}
+	{pan=-50}
+	{tilt=-7}
+	{fov=103}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(-50,-7,103,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(1)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(1)' p i'./img/next.gif'}">
+
+<param name="pano1"	value="
+	{file=panos/buracos.jpg}
+	{auto=0.5}
+	{pan=-91}
+	{tilt=9}
+	{fov=138}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(-91,9,138,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(0)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(0)' p i'./img/next.gif'}">
+
+
+</applet>
+</protect>
+
+
+<br>
+<instructions>
+
+
+<table width=400 cellpadding=0>
+
+<view number = "0"
+      key    = "laschozas"
+      title  = "Mirador Lomo da las Chozas"
+      desc   = "<de: Blick über die Caldera de Taburiente während einer Wanderung am Kraterrand von La Cumbrecita.>
+                <en: View over the Caldera de Taburiente during a walk along the edge of the caldera La Cumbrecita.>">
+		  
+<view number = "1"
+      key    = "buracos"
+      title  = "Cuevas de Buracas"
+      desc   = "<de: Drachenbäume und Felshöhlen im Norden La Palmas, nahe Las Tricias.>
+                <en: Dragontrees and Caves in the north of La Palma, near Las Tricias.>">
+		  
+		  
+</table>
+
+</center>
+
+

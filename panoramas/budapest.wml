@@ -1,0 +1,47 @@
+#include "layout.inc" select=panoramas_budapest name=Panoramas
+#include "ptviewer.inc"
+<section    "Panoramas">
+<subsection "Budapest">
+
+<h2>{#SUBSECTION#}</h2>
+
+<center>
+<protect>
+<applet archive=ptviewer.jar code=ptviewer.class name=ptviewer width=400 height=330>
+
+// list of panos
+
+<param name=pano0	value="
+	{file=panos/anonymous.jpg}
+	{auto=0.5}
+	{pan=113}
+	{tilt=8}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(113,8,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(0)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(0)' p i'./img/next.gif'}">
+
+</applet>
+</protect>
+
+
+<br>
+<instructions>
+
+
+<table width=400 cellpadding=0>
+
+<view number = "0"
+      key    = "anonymous"
+      title  = "<en: Anonymous statue>
+                <de: Anonymusstatue>"
+      desc   = "<en: Anonymous statue at Castle Vajdahunyad>
+                <de: Anonymusstatue bei Burg Vajdahunyad >">
+
+</table>
+
+</center>
+
+

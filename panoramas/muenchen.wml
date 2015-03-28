@@ -1,0 +1,48 @@
+#include "layout.inc" select=panoramas_muenchen name=Panoramas
+#include "ptviewer.inc"
+<section    "Panoramas">
+<subsection "München">
+
+<h2>{#SUBSECTION#}</h2>
+
+<div align="center">
+<protect>
+<applet archive=ptviewer.jar code=ptviewer.class name=ptviewer width=400 height=330>
+
+// list of panos
+
+<param name=pano0	value="
+	{file=panos/greenhouse.jpg}
+	{auto=0.5}
+	{pan=20}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(20,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(1)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(1)' p i'./img/next.gif'}">
+
+
+
+
+</applet>
+</protect>
+
+
+<br>
+<instructions>
+
+
+<table width=400 cellpadding=0>
+
+<view number = "0"
+      key    = "greenhouse"
+      title  = "Greenhouse "
+      desc   = "A Greenhouse in Munich">
+		  
+</table>
+
+</center>
+
+

@@ -1,0 +1,142 @@
+#include "layout.inc" select=tutorial_scripts name=Tutorial
+#   !wml -o "(ALL-LANG_*)+LANG_EN:%BASE.en.php" -o "(ALL-LANG_*)+LANG_DE:%BASE.de.php"
+
+<section "Tutorial">
+<subsection "Scripts">
+<h2>{#SUBSECTION#}</h2>
+
+
+<h2>Parameters</h2>
+
+<table  border="0" cellspacing="0" cellpadding="0" summary="">
+<caption><em class="caption">Tab 1: </em>Projection types</caption>
+<tr>
+ <th>flag</th>
+ <th>input (i)</th>
+ <th>output (p)</tr>
+
+<tr>
+ <td>f0</td>
+ <td>rectlinear</td>
+ <td>rectlinear</td>
+</tr>
+
+<tr>
+ <td>f1</td>
+ <td>panoramic</td>
+ <td>cylindrical</td>
+</tr>
+
+<tr>
+ <td>f2</td>
+ <td>circular fisheye</td>
+ <td>equirectangular</td>
+</tr>
+
+<tr>
+ <td>f3</td>
+ <td>full-frame fisheye</td>
+ <td>circular fisheye</td>
+</tr>
+
+<tr>
+ <td>f4</td>
+ <td>pshpere, equirectangular</td>
+ <td>--</td>
+</tr>
+</table>
+
+
+<table  border="0" cellspacing="0" cellpadding="0" summary="">
+<caption><em class="caption">Tab 2: </em>Image parameters</caption>
+  <tr>
+    <th>what</th>
+    <th>flag</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>f</td>
+    <td>projection</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>width</td>
+    <td>w</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>height</td>
+    <td>h</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>yaw</td>
+    <td>y</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>pitch</td>
+    <td>p</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>roll</td>
+    <td>r</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>hfov</td>
+    <td>v</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>n</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>distortion</td>
+    <td>a,b,c</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>offset</td>
+    <td>d,e</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>shear</td>
+    <td>g,t</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>crop</td>
+    <td>C</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>select</td>
+    <td>S</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>mask</td>
+    <td>m</td>
+    <td>obsolete, replaced by S</td>
+  </tr>
+  <tr>
+    <td>seam</td>
+    <td>s</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>morph</td>
+    <td>o</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>Camera Coords</td>
+    <td>X,Y,Z</td>
+    <td>required</td>
+  </tr>
+</table>

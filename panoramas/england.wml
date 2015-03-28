@@ -1,0 +1,78 @@
+#include "layout.inc" select=panoramas_england  name=Panoramas
+#include "ptviewer.inc"
+<section    "Panoramas">
+<subsection "England">
+
+<h2>{#SUBSECTION#}</h2>
+
+<div align="center">
+<protect>
+<applet archive=ptviewer.jar code=ptviewer.class name=ptviewer width=400 height=330>
+
+// list of panos
+
+<param name=pano0	value="
+	{file=panos/minack.jpg}
+	{auto=0.5}
+	{pan=20}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(20,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(2)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(1)' p i'./img/next.gif'}
+	{hotspot0=x1515 y435 u'ptviewer:newPanoFromList(0)' p i'hs/minack1.jpg' w n'Edith'}">
+
+<param name=pano1	value="
+	{file=panos/dartmoor.jpg}
+	{auto=0.5}
+	{pan=65}
+	{tilt=-8}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(65,-8,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(0)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(2)' p i'./img/next.gif'}">
+
+<param name=pano2	value="
+	{file=panos/brighton.jpg}
+	{auto=0.5}
+	{pan=-53}
+	{tilt=0}
+	{fov=60}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(-53,0,60,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(1)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(0)' p i'./img/next.gif'}">
+
+</applet>
+</protect>
+
+
+<br>
+
+<instructions>
+<table width=400 cellpadding=0>
+
+<view number = "0"
+      key    = "minack"
+      title  = "Beach at the Minack Theatre "
+      desc   = "The Minack is an Open Air theatre almost completly build by an old lady">
+		  
+<view number = "1"
+      key    = "dartmoor"
+      title  = "Dartmoor"
+      desc   = "don't get lost!">
+
+<view number = "2"
+      key    = "brighton"
+      title  = "Brighton beach"
+      desc   = "bla">
+</table>
+
+</center>
+
+

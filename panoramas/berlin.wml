@@ -1,0 +1,115 @@
+#include "layout.inc" select=panoramas_berlin name=Panoramas
+#include "ptviewer.inc" 
+
+<section    "Panoramas">
+<subsection "Berlin">
+
+
+<h2>{#SUBSECTION#}</h2>
+
+<div align="center">
+<protect>
+
+<applet archive=ptviewer.jar code=ptviewer.class name=ptviewer width=400 height=330>
+
+// list of panos
+
+<param name=pano0	value="
+	{file=panos/dhm1.jpg}
+	{auto=0.5}
+	{pan=0}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(60,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(3)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(1)' p i'./img/next.gif'}
+	{hotspot0=X46.7 Y49.5 u'ptviewer:newPanoFromList(2)' c000000 q n'Bridge' i'Bridge' e}
+	{hotspot1=X55.7 Y58.9 u'ptviewer:newPanoFromList(1)' c000000 q n'Foyer' i'Foyer' e}">
+
+
+<param name=pano1	value="
+	{file=panos/dhm2.jpg}
+	{auto=0.5}
+	{pan=60}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(60,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(0)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(2)' p i'./img/next.gif'}
+	{hotspot0=X41.9 Y40.3 u'ptviewer:newPanoFromList(2)' c000000 q n'Bridge' i'Bridge' e}
+	{hotspot1=X7.0 Y38.7 u'ptviewer:newPanoFromList(0)' c000000 q n'Stairs' i'Stairs' e}">
+
+
+<param name=pano2	value="
+	{file=panos/dhm3.jpg}
+	{auto=0.5}
+	{pan=60}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(60,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(1)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(2)' p i'./img/next.gif'}
+	{hotspot0=X69.3 Y48.9 u'ptviewer:newPanoFromList(0)' c000000 q n'Stairs' i'Stairs' e}
+	{hotspot1=X55.0 Y62.4 u'ptviewer:newPanoFromList(1)' c000000 q n'Foyer' i'Foyer' e}">
+
+<param name=pano3	value="
+	{file=panos/meeting.jpg}
+	{hsimage=hs/meeting.gif}
+	{auto=0.5}
+	{pan=60}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=25}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(60,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(2)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(0)' p i'./img/next.gif'}
+	{hotspot0=u'mailto:peter@4pi.org'  n'Peter Reimer' i'Peter Reimer'}
+	{hotspot1=u'mailto:'  n'Hensel' i'Hensel'}
+	{hotspot2=u'mailto:'  n'dont know' i'dont know'}">
+
+
+</applet>
+</protect>
+
+
+<br>
+<instructions>
+
+<table width=400 cellpadding=0>
+
+<view number = "0"
+      key    = "dhm1"
+      title  = "<en: German Historic Museum><de: Deutsches Historisches Museum>"
+      desc   = "<en: In the stairway of the Pei Building><de: Im Treppenhaus des Pei-Gebäudes>">
+
+<view number = "1"
+      key    = "dhm2"
+      title  = "<en: German Historic Museum><de: Deutsches Historisches Museum>"
+      desc   = "<en: In the foyer of the Pei Building><de: Im Foyer des Pei-Gebäudes>">
+
+<view number = "2"
+      key    = "dhm3"
+      title  = "<en: German Historic Museum><de: Deutsches Historisches Museum>"
+      desc   = "<en: In the foyer of the Pei Building><de: Im Foyer des Pei-Gebäudes>">
+
+<view number = "3"
+      key    = "meeting"
+      title  = "<en: Pano by Ian Wood>"
+      desc   = "<en: Pano by Ian Wood>">
+
+		  
+</table>
+
+ Mönchsberg
+ Salzburger Dom
+ Residenz (indoor)
+</center>
+
+

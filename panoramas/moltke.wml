@@ -1,0 +1,65 @@
+#include "layout.inc" select=panoramas_moltke
+#include "ptviewer.inc"
+<section    "Panoramas">
+<subsection "Moltke">
+
+<h2>{#SUBSECTION#}</h1>
+
+<div align="center">
+<protect>
+<applet archive=ptviewer.jar code=ptviewer.class name=ptviewer width=400 height=330>
+
+// list of panos
+
+
+<param name=pano0	value="
+	{file=panos/moltke.jpg}
+	{auto=0.5}
+	{pan=0}
+	{tilt=0}
+	{fov=90}
+	{fovmax=130}
+	{fovmin=0.5}
+	{inits=ptviewer:startApplet(0)}
+	{shotspot7=x340 y280 a361 b299 u'ptviewer:moveTo(0,0,90,10)' p i'./img/reset.gif'}
+	{shotspot8=x315 y280 a336 b299 u'ptviewer:newPanoFromList(1)' p i'./img/previous.gif'}
+	{shotspot9=x365 y280 a386 b299 u'ptviewer:newPanoFromList(0)' p i'./img/next.gif'}">
+
+<param name=applet0     value="{code= ptzoom.class} 
+                               {file=zoom/moltke1.jpg}
+                               {pan=-14.1929}
+                               {tilt=0.618258}
+                               {rot=-0.564368}
+			       {fov=6.82786}">
+
+
+</applet>
+</protect>
+
+
+<br>
+<p>
+# #include 'instructions.tmpl'
+
+
+<table width=400 cellpadding=0>
+
+<view number = "0"
+      key    = "krefeld"
+      title  = "Krefeld "
+      desc   = "Krefeld Hauptbahnhof">
+		  
+<view number = "1"
+      key    = "dach"
+      title  = "Room with a view "
+      desc   = "A look in and out of our living room">
+
+<view number = "2"
+      key    = "moltke"
+      title  = "Moltke Gymnasium Krefeld"
+      desc   = "Zoom in to get a detailed view of the church">
+</table>
+
+</center>
+
+

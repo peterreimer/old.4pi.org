@@ -1,0 +1,118 @@
+#include "layout.inc" select=tutorial_installation name=Tutorial
+#include "format.inc"
+<section "Tutorial">
+<subsection "Installation">
+
+<h2>{#SUBSECTION#}</h2>
+<h3><en: ...of the command line programs>
+    <de: ...der Kommandozeilenprogramme> </h3>
+
+<p>
+In <b>addition</b> to he requires the JPEG, TIFF and PNG shared libraries
+Download the Panorama Tools package from
+<href url="www.fh-furtwangen.de/~dersch" name="Helmut Dersch's website">
+or one of the mirrors,
+<href url="http://www.path.unimelb.edu.au/~dersch/" name="here"> or
+<href url="http://home.no.net/dmaurer/%7Edersch/Index.htm" name="here">.
+ he requires the JPEG, TIFF and PNG shared libraries
+ 
+On the command line you can use <em>wget</em> to retrieve the package:
+
+<user dir     = "~"
+      command = "wget http://www.fh-furtwangen.de/~dersch/PanoTools.tar.gz">
+
+<p>
+Unpack the file using the command
+
+<root    dir     = "/usr/local"
+         command = "tar -xzvf PanoTools.tar.gz">
+
+<root    dir     = "/usr/local/PTLinux/Helpers"
+         command = "chmod 755 PTStitcher">
+
+<root    dir     = "/usr/local/PTLinux/Helpers"
+         command = "./PTStitcher">
+<output output="./PTStitcher: error while loading shared libraries: 
+libpano12.so: cannot open shared object file: No such file or directory
+">	 
+
+<root    dir     = "/usr/local/PTLinux/helpers"
+         command = "ldd PTStitcher">
+
+<p>
+This will create a directory named 'PTLinux'. Besides java programs
+<em>ptpicker, pteditor</em> and <em>ptcryt</em>, which  will be
+discussed in the next section, it contains a the shared library
+<em>libpano12.so</em>, providing most of the functionality of PanoTools.
+The Subdirectory 'Helpers' contains the actual programs.<br>
+To install the package you have to put <em>libpano12.so</em> into the search
+path of the linker, i suggest <tt>/usr/local/lib</tt>. Now your system has
+to be informed about the newly available library, which is done using the
+<tt>ldconfig</tt> command. The configuration file <tt>/etc/ld.so.conf</tt>
+contains a list of directories, where libraries can reside. Make sure,
+<tt>/usr/local/lib</tt> is among those and that libpano12.so is executable.
+In order to have all the programs in the 'Helpers'
+directory easily available without typing the full path to the application,
+you should copy all <em>PT*</em> programs to <tt>/usr/local/bin</tt> or
+another directory, which is in your path. Make sure all <em>PT*</em> programs
+are executable. Use the <tt>ldd</tt> command, which prints the shared
+library dependencies, to check your installation. If everything went OK, you
+should get something like this:
+
+
+<fig nr      = "1"
+     caption = "<en: File><de: Datei> /etc/ld.so.conf"
+     content = "
+<script content="
+/usr/local/lib <br>
+/usr/X11R6/lib/Xaw3d <br>
+/usr/X11R6/lib <br>
+<br>
+/usr/lib/libc5-compat <br>
+/lib/libc5-compat <br>
+/usr/i486-linuxlibc1/lib <br>
+">">
+
+
+<root    dir="/home/peter/PTLinux/Helpers"
+         command="ldd PTStitcher">
+
+<output output ="
+libpano13.so => /usr/local/lib/libpano12.so (0x40021000)<br>
+libc.so.6 => /lib/libc.so.6 (0x40058000)<br>
+libm.so.6 => /lib/libm.so.6 (0x4017b000)<br>
+libjpeg.so.62 => /usr/lib/libjpeg.so.62 (0x4019d000)<br>
+libtiff.so.3 => /usr/lib/libtiff.so.3 (0x401bd000)<br>
+libpng.so.2 => /usr/lib/libpng.so.2 (0x401ff000)<br>
+/lib/ld-linux.so.2 => /lib/ld-linux.so.2 (0x40000000)<br>
+libz.so.1 => /usr/lib/libz.so.1 (0x4022b000)">
+
+
+<h3>Using the Java Frontends </h3>
+
+<href url="http://java.sun.com">
+<href url="http://www.blackdown.org/">
+
+<fig nr="2"
+     caption="<en: File ><de: Datei> ~/bin/ptpicker"
+     content="
+<script content="
+\#! /bin/bash<br>
+cd ~/PTLinux<br>
+java -Djava.library.path=/usr/local/lib -mx128m -jar ptpicker.jar<br>
+">">
+
+<h3>PTViewer, native Version</h3>
+
+<user dir     = "~"
+      command = "wget http://www.fh-furtwangen.de/~dersch/PTViewer.tar.gz">
+
+<user dir     = "~"
+      command = "mkdir PTViewer">
+
+<user dir     = "~/PTViewer"
+      command = "tar -xzvf PTViewer.tar.gz">
+
+<root dir     = "/home/peter/PTViewer/src"
+      command = "mv PTViewer /usr/local/bin/.">
+

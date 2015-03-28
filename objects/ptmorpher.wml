@@ -1,0 +1,28 @@
+#include "layout.inc" select=objects_schroiber name=Objects
+<section "Objects">
+<subsection "Schroiber">
+
+
+<h2>Test with PTMorpher</h2>
+<p>
+<center>
+<protect>
+<applet name=ptviewer archive=ptobject.jar code=ptviewer.class width=238 height=300>
+<PARAM name=auto	value="1">
+
+<param name=applet0 value="{code=ptobject.class}
+                           {file=obj/schroiber.jpg}
+                           {nhor=20}
+                           {nver=1}
+			   {auto=0.5}">
+
+<param name=inits value="ptviewer:startApplet(0)">
+</applet>
+
+</protect>
+</center>
+<p>
+Click and drag with the mouse into the image to change the speed and the direction of the morphing.
+A tutorial about how this was made can be found 
+<href url="$(TUTORIAL)/ptmorpher" name="here">
+

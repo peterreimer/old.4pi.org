@@ -1,0 +1,3 @@
+wml -o "(ALL-LANG_*)+LANG_EN:%BASE.en.html" -o "(ALL-LANG_*)+LANG_DE:%BASE.de.html"
+-F img
+-F panoramas/flat

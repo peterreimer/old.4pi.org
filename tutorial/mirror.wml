@@ -1,0 +1,78 @@
+#include "layout.inc" select=tutorial_mirror scripts name=Tutorial
+#include "format.inc"
+<section "Tutorial">
+<subsection "Mirror Panoramas">
+
+<h1>{#SUBSECTION#}</h1>
+
+<h2><en: Introduction><de: Einleitung></h2>
+<h2><en: Calculation of the black hole><de: Berechnung des schwarzen Loches></h2>
+
+<en: >
+<de:	Da eine verspiegelte Kugel alles reflektiert, außer das,
+		was sich direkt hinter ihr befindet, beträgt der Bildwinkel 360°>
+
+
+<fig nr      = "1" 
+     content = "<img src="$(TUTORIAL)/img/mirror.png" alt="">"
+     caption = "<en: Simplified scheme for the caculation of the black hole>
+					 <de: Vereinfachtes Schema zur Berechnung des schwarzen Loches>">
+<br>
+
+Philo / Erik Krause, 15.12.2003
+
+<div class="equation">
+<span class="blue">&alpha;</span> = 2 arcsin ( <span class="blue">r</span> / (<span class="blue">d</span> + <span class="blue">r</span>) ).
+</div>
+
+<div class="equation">
+<span class="green">&alpha;</span> = 2 arctan ( (<span class="green">R</span> * <span class="green">s</span>) / (<span class="green">f</span> * <span class="green">w</span>) ).
+</div>
+
+
+<en: From this we obtain the horizontal field of view:>
+<de: Daraus ergibt sich der horizontale Bildwinkel zu:>
+
+<div class="equation">
+hfov = 360° - &alpha;
+</div>
+
+<div align="center">
+
+<form name="hiddenAngle" action="">
+<table>
+	<tr>
+		<td><en: Distance><de: Abstand></td>
+		<td>Radius</td>
+		<td>&nbsp;</td>
+		<td><en: Angle><de: Winkel></td>
+		<td>hfov</td>
+	</tr>
+	<tr>
+		<td><INPUT TYPE="text" size=4 name="distance" value="">cm</td>
+		<td><INPUT TYPE="text" size=4 name="radius" value="">cm</td>
+		<td><INPUT TYPE="button" name="calculate" value="calculate" onClick="calculateAngle();"></td>
+		<td><INPUT TYPE="text" size=5 name="angle"    value="" readonly>°</td>
+		<td><INPUT TYPE="text" size=5 name="hfov"    value="" readonly>°</td>
+	</tr>
+</table>
+</form>
+</div>
+
+<fig nr      = "2" 
+     content = "<img src="$(TUTORIAL)/img/mirror_input.jpg" alt="">"
+     caption = "<en: Raw picture, cropped to a square>
+					 <de: Rohbild, quadratisch beschnitten>, 1000x1000px">
+
+<fig nr      = "3" 
+     content = "<img src="$(TUTORIAL)/img/mirror_remapped.jpg" alt="">"
+     caption = "<en: Remapped from convex mirror to psphere>
+					 <de: Projektionsänderung von convex mirror zu psphere>, 1592x785px">
+
+<fig nr      = "4" 
+     content = "<img src="$(TUTORIAL)/img/mirror_resized.jpg" alt="">"
+     caption = "<en: Resized to an aspect ratio of 2:1>
+					 <de: Vergrößert auf ein Seitenverhältnis von 2:1>, 1592x796px">
+					 
+
+<href url="$(PANORAMAS)/teaboxes" name="show in PTViewer">

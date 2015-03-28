@@ -1,0 +1,7 @@
+p f0 w238 h300 v5 u10 a0 b1 c0.05 n"JPEG" 
+
+i f0 w950 h1200 y0 p0 r0  v5 n"img/schroeder.jpg"  X0 Y0 Z0
+i f0 w950 h1200 y0 p0 r0  v5 n"img/stoiber.jpg"  X1 Y0 Z0
+v 
+v 
+
