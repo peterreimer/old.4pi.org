@@ -45,7 +45,7 @@
 <tr>
     <td class="subnav_left"> </td>
     <td>
-        <form method="get" id="search" action="http://duckduckgo.com/">
+        <form method="get" id="search" action="https://duckduckgo.com/">
         <input type="hidden" name="sites"value="4pi.org"/>
         <input type="hidden" name="kt" value="Helvetica"/>
         <input type="text" name="q" maxlength="255" placeholder="DuckDuckGo Search"/>
