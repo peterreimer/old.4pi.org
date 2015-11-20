@@ -1,6 +1,6 @@
 # 4pi.org
 
-wml powered personal website at http://4pi.org
+[wml](http://www.thewml.org/) powered personal website at http://4pi.org
 
 Generating:
 
