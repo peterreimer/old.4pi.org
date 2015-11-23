@@ -15,6 +15,7 @@
 -D DOWNLOADS~./downloads
 -D CONTACT~./contact
 -D SITEMAP~./sitemap
+-D PRIVACY~./privacy
 -D IMG~./img
 -D PDF~./pdf
 -D CSS~./css

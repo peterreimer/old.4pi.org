@@ -5,6 +5,7 @@
     <href url="$(TUTORIAL)/"  target="_parent" name="<en: Tutorial><de: Tutorial>"> ::
     <href url="$(EQUIPMENT)/" target="_parent" name="<en: Equipment><de: Ausrüstung>"> ::
     <href url="$(DOWNLOADS)/" target="_parent" name="<en: Downloads><de: Downloads>"> ::
+    <href url="$(PRIVACY)/"   target="_parent" name="<en: Privacy><de: Datenschutz>"> ::
     <href url="$(CONTACT)/"   target="_parent" name="<en: Contact><de: Kontakt>"> ]
 
 
