@@ -1,6 +1,6 @@
 # 4pi.org
 
-[wml](http://www.thewml.org/) powered personal website at http://4pi.org
+[wml](https://www.shlomifish.org/open-source/projects/website-meta-language/) powered personal website at http://4pi.org
 
 Generating:
 
