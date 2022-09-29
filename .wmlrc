@@ -1,6 +1,6 @@
 -I include
 
--D BASE_URL=http://4pi.org
+-D BASE_URL=https://4pi.org
 -D BASE_DIR~.
 -D WML_GEN_REALNAME="Peter Reimer"
 -D WML_GEN_USERNAME="peter"
